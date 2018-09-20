@@ -1,0 +1,29 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "title title"
+  "header header"
+  "sidebar sidebar"
+  "content content"
+  "sidebar footer";
+}
+
+.title {
+  grid-area: title;
+}
+.header {
+
+  grid-area: header;
+}
+.sidebar {
+  grid-area: sidebar;
+}
+.content {
+  grid-area: content;
+  align-self: center;
+  display: grid;
+}
+.footer {
+  grid-area: footer;
+}

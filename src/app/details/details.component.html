@@ -1,0 +1,82 @@
+
+
+<div class="container">
+  <h1>Request a Quote</h1>
+  <form #details="ngForm">
+    <div class="form-group">
+      <label for="name">Contact Name</label>
+      <input type="text" class="form-control" id="name"
+             placeholder="John Doe"
+             required
+             [(ngModel)]="model.name" name="name">
+    </div>
+
+    <div class="form-group">
+      <label for="email">Contact Email</label>
+      <input type="text" class="form-control" id="email"
+             placeholder="johndoe@mail.com"
+             required
+             [(ngModel)]="model.email" name="email" >
+    </div>
+
+    <div class="form-group">
+      <label for="phone">Contact Phone</label>
+      <input type="text" class="form-control" id="phone"
+             placeholder="123456789"
+             required
+             [(ngModel)]="model.phone" name="phone" >
+    </div>
+    <div class="form-group">
+      <label for="gallons">Gallons Requested</label>
+      <input type="text" class="form-control" id="gallons"
+             placeholder="0.00 Gallons"
+             required
+             [(ngModel)]="model.gallons" name="gallons" >
+    </div>
+    <div class="form-group">
+      <label for="date">Delivery Date</label>
+      <input type="text" class="form-control" id="date"
+             placeholder="dd/mm/year"
+             required
+             [(ngModel)]="model.date" name="date" >
+    </div>
+    <div class="form-group">
+      <label for="location">Delivery Location</label>
+      <input type="text" class="form-control" id="location"
+             placeholder="ex: San Marcos, TX"
+             required
+             [(ngModel)]="model.location" name="location" >
+    </div>
+
+    <button type="submit" class="btn btn-success">Submit</button>
+
+  </form>
+</div>
+<!--
+<div>
+  <form action="action_page.php" >
+    Gallons Requested:
+    <input type="text" name="gallons" placeholder="0.00 Gallons">
+    <br>
+    Delivery Date:
+    <input type="text" name="deliveryDate" placeholder="dd/mm/year">
+    <br>
+    Delivery Location:
+    <input type="text" name="deliveryLocation" placeholder="ex: San Marcos, TX">
+    <br>
+    Delivery Contact Person Name:
+    <input type="text" name="contactName" placeholder="John Doe">
+    <br>
+    Delivery Contact Person Phone:
+    <input type="text" name="contactPhone" placeholder="123456789">
+    <br>
+    Delivery Contact Person Email:
+    <input type="text" name="contactEmail" placeholder="johndoe@mail.com">
+    <br>
+    Total Amount Due:
+    <input type="text" name="totalAmountDue" placeholder="price to be shown">
+    <br>
+    <input type="submit" value="Submit">
+  </form>
+  <!--If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php"
+</div>-->
